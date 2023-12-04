@@ -1,0 +1,18 @@
+def var vcont as integer.
+def var mres5 as integer.
+def var mres3 as integer.
+
+do vcont = 1 to 100:
+	mres5 = vcont / 5 no-error.
+	mres3 = vcont / 3 no-error.
+	if  mres5 * 5 = vcont then do:
+		if mres3 * 3 = vcont then message "FizzBuzz".
+		else message "Buzz".
+		next.
+	end.
+	else if mres3 * 3 = vcont then do:
+		message "Fizz".
+		next.
+	end.
+	message vcont.
+end.
